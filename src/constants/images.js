@@ -10,7 +10,9 @@ import merchant from "../assets/icons/merchant.svg";
 import profile from "../assets/images/avatar.jpg";
 import bell from "../assets/icons/Bell.svg";
 import searchIcon from "../assets/icons/Search.svg";
+import chart from "../assets/icons/small_chart.svg";
 export const images = {
+  chart: chart,
   profile: profile,
   bell: bell,
   searchIcon: searchIcon,

@@ -1,0 +1,17 @@
+.card-contents {
+  padding: 1rem;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-title {
+  color: #787c90;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.card-amount {
+  color: #262626;
+  font-size: 1rem;
+  font-weight: 500;
+}

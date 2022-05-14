@@ -1,7 +1,11 @@
-import React from "react";
+import OverviewCards from "../components/overview-cards/OverviewCards";
 
 const Overview = () => {
-  return <div>Overview</div>;
+  return (
+    <>
+      <OverviewCards />
+    </>
+  );
 };
 
 export default Overview;

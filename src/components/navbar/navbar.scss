@@ -87,11 +87,13 @@
   align-items: center;
 }
 @media (min-width: 768px) {
+  .navbar {
+    .nav-link {
+      margin-right: 1rem;
+    }
+  }
   .profile-img {
     display: block;
-  }
-  .nav-link {
-    margin-right: 1rem;
   }
 }
 @media (min-width: 992px) {
