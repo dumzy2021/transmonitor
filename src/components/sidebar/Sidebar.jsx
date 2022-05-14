@@ -1,5 +1,5 @@
 import "./sidebar.scss";
-import { images } from "../../constants/images";
+// import { images } from "../../constants/images";
 import sidebarNav from "../../constants/navbar";
 import { NavLink } from "react-router-dom";
 const Sidebar = () => {
@@ -19,7 +19,7 @@ const Sidebar = () => {
         <div className="sidebar-nav">
           <ul className="nav nav-pills flex-column mb-auto sidebar-nav pb-5">
             {sidebarNav.map((nav, index) => (
-              <>
+              <div key={index}>
                 <li className="nav-title mt-5">
                   <span>{nav.section}</span>
                 </li>
@@ -44,7 +44,7 @@ const Sidebar = () => {
                     </NavLink>
                   ))}
                 </li>
-              </>
+              </div>
             ))}
 
             {/* <li className="nav-title mt-5">
