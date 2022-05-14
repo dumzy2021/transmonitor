@@ -1,0 +1,14 @@
+.main-wrapper {
+  background: #f2f0f0;
+}
+.dashbord-content {
+  padding-bottom: 3rem;
+  padding-top: 5rem;
+  min-height: 100vh;
+}
+@media (min-width: 992px) {
+  .main-wrapper {
+    padding-left: 280px;
+    padding-right: 20px;
+  }
+}

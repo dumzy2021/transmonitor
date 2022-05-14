@@ -1,10 +1,15 @@
-import Navbar from "./components/navbar/Navbar";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DashboardLayout from "./layouts/dashboard-layout/DashboardLayout";
+import Overview from "./pages/Overview";
 const App = () => {
   return (
-    <div className="App">
-      <Navbar />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" exact element={<DashboardLayout />}>
+          <Route index element={<Overview />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 

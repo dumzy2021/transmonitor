@@ -1,7 +1,5 @@
 import "./navbar.scss";
-import Profile from "../../assets/images/avatar.jpg";
-import Bell from "../../assets/icons/Bell.svg";
-import SearchIcon from "../../assets/icons/Search.svg";
+import { images } from "../../constants/images";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-md fixed-top">
@@ -18,12 +16,16 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <img src={Profile} alt="Profile sm" className="profile-img-sm" />
+          <img
+            src={images.profile}
+            alt="Profile sm"
+            className="profile-img-sm"
+          />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <form className="px-md-2 d-flex align-items-center">
             <span className="search-icon">
-              <img src={SearchIcon} alt="Search Icon" className="" />
+              <img src={images.searchIcon} alt="Search Icon" className="" />
             </span>
             <input
               className="form-control navbar-search shadow-none me-2"
@@ -46,7 +48,7 @@ const Navbar = () => {
             <li className="nav-item">
               <a className="nav-link" href="/">
                 <span className="search-icon">
-                  <img src={Bell} alt="Search Icon" className="" />
+                  <img src={images.bell} alt="Search Icon" className="" />
                   <span className="bell-info">5</span>
                 </span>
               </a>
@@ -58,7 +60,7 @@ const Navbar = () => {
               <br />
               <span className="username"> Oluwaleke Ojo </span>
             </span>
-            <img src={Profile} alt="Profile" className="profile-img" />
+            <img src={images.profile} alt="Profile" className="profile-img" />
           </div>
         </div>
       </div>
