@@ -1,5 +1,7 @@
 import "./sidebar.scss";
 import { images } from "../../constants/images";
+import sidebarNav from "../../constants/navbar";
+import { NavLink } from "react-router-dom";
 const Sidebar = () => {
   return (
     <aside className="sidebar">
@@ -16,25 +18,36 @@ const Sidebar = () => {
         </a>
         <div className="sidebar-nav">
           <ul className="nav nav-pills flex-column mb-auto sidebar-nav pb-5">
-            <li className="nav-title mt-5">
-              <span>main</span>
-            </li>
-            <li className="nav-item">
-              <a
-                href="/"
-                className="nav-link"
-                aria-current="page"
-                title="Overview"
-              >
-                <img
-                  src={images.overview}
-                  alt="sidebar icons"
-                  className="nav-icon"
-                />
-                overview
-              </a>
-            </li>
-            <li className="nav-title mt-5">
+            {sidebarNav.map((nav, index) => (
+              <>
+                <li className="nav-title mt-5">
+                  <span>{nav.section}</span>
+                </li>
+                <li className="nav-item">
+                  {nav.routes.map(({ link, icon, text }, idx) => (
+                    <NavLink
+                      key={`link-${idx}`}
+                      to={link}
+                      className={({ isActive }) =>
+                        isActive ? "nav-link nav-link-active " : "nav-link "
+                      }
+                      //   className="nav-link"
+                      aria-current="page"
+                      title={text}
+                    >
+                      <img
+                        src={icon}
+                        alt="sidebar icons"
+                        className="nav-icon"
+                      />
+                      {text}
+                    </NavLink>
+                  ))}
+                </li>
+              </>
+            ))}
+
+            {/* <li className="nav-title mt-5">
               <span>Payments</span>
             </li>
             <li className="nav-item">
@@ -159,7 +172,7 @@ const Sidebar = () => {
                 />
                 merchant profile
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

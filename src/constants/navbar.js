@@ -1,39 +1,64 @@
+import { images } from "./images";
 const sidebarNav = [
   {
-    link: "/",
-    section: "home",
-    icon: <i className="bx bx-home-alt"></i>,
-    text: "Home",
+    section: "main",
+    routes: [
+      {
+        link: "/",
+        icon: images.overview,
+        text: "Overview",
+      },
+    ],
   },
   {
-    link: "/orders/order",
+    section: "payments",
+    routes: [
+      {
+        link: "/blanks",
+        icon: images.allPayments,
+        text: "All Payments",
+      },
+      {
+        link: "/blanks",
+        icon: images.reconcilledPayments,
+        text: "Reconcilled Payments",
+      },
+      {
+        link: "/blanks",
+        icon: images.unReconcilledPayments,
+        text: "Un-reconcilled Payments",
+      },
+      {
+        link: "/blanks",
+        icon: images.settlement,
+        text: "Manual Settlement",
+      },
+    ],
+  },
+  {
     section: "orders",
-    icon: <i className="bx bx-receipt"></i>,
-    text: "Orders",
-  },
-  {
-    link: "/products",
-    section: "products",
-    icon: <i className="bx bx-cube"></i>,
-    text: "Products",
-  },
-  {
-    link: "/customers",
-    section: "customers",
-    icon: <i className="bx bx-user"></i>,
-    text: "Customers",
-  },
-  {
-    link: "/stats",
-    section: "stats",
-    icon: <i className="bx bx-line-chart"></i>,
-    text: "Stats",
-  },
-  {
-    link: "/settings",
-    section: "settings",
-    icon: <i className="bx bx-cog"></i>,
-    text: "Settings",
+    routes: [
+      {
+        link: "/blanks",
+        icon: images.orders,
+        text: "All Orders",
+      },
+      {
+        link: "/blanks",
+        icon: images.pendingOrders,
+        text: "Pending Orders",
+      },
+      {
+        link: "/blanks",
+        icon: images.reconcilledOrders,
+        text: "Reconcilled Orders",
+      },
+      {
+        link: "/blanks",
+        icon: images.merchant,
+        text: "Merchant Profile",
+      },
+    ],
   },
 ];
 
