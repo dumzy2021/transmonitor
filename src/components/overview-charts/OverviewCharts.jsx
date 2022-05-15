@@ -191,14 +191,75 @@ const OverviewCharts = () => {
       },
     ],
   };
+  const chartDetails = [
+    {
+      title: "Orders",
+      details: [
+        {
+          name: "Pending Order",
+          total: 20,
+          classlist: "Pending",
+        },
+        {
+          name: "Reconcilled Order",
+          total: 80,
+          classlist: "Reconcilled",
+        },
+        {
+          name: "Total Order",
+          total: 100,
+          classlist: "total",
+        },
+      ],
+    },
+    {
+      title: "Payments",
+      details: [
+        {
+          name: "Un-reconcilled Payments",
+          total: 20,
+          classlist: "Pending",
+        },
+        {
+          name: "Reconcilled Payments",
+          total: 80,
+          classlist: "Reconcilled",
+        },
+        {
+          name: "Total Payments",
+          total: 100,
+          classlist: "total",
+        },
+      ],
+    },
+  ];
   return (
-    <div class="row">
-      <div class="col-12 col-lg-8 mt-2 mb-5">
+    <div className="row  g-0 g-lg-1">
+      <div className="col-12 col-xl-8  mb-5">
         <HighchartsReact
           highcharts={Highcharts}
           options={options}
           style={{ width: "100%", display: "block" }}
         />
+      </div>
+      <div className="col-12 col-xl-4  mb-5">
+        <div className="row">
+          {chartDetails.map((detail, id) => (
+            <div key={id} className="col-12 col-md-6 col-xl-12 mb-3">
+              <div className="chart-details">
+                <p className="chart-title">{detail.title}</p>
+                <div className="chart-gradient"></div>
+                <div className="chart-detail">
+                  {detail.details.map(({ name, total, classlist }, idx) => (
+                    <p key={idx}>
+                      {name}: <span className={`${classlist}`}>{total}</span>
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

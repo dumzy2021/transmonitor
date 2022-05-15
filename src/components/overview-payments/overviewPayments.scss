@@ -57,12 +57,12 @@
 
   :not(caption) > tr > th {
     margin-bottom: 10px;
-    background: #dcdde0;
+    background: #eaeef0;
     color: #7f8fa4;
     text-transform: capitalize;
     letter-spacing: 1.1px;
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 500;
     text-align: left;
     border: none !important;
     border-width: none !important;
@@ -81,7 +81,7 @@
     background: #f4f4f499;
   }
   :not(caption) > tr:hover {
-    background: #efefef;
+    background: #eaeef0;
   }
 }
 

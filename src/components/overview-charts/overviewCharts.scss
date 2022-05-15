@@ -1,0 +1,26 @@
+.chart-details {
+  background: #fff;
+  padding: 1rem;
+}
+.chart-title {
+  font-size: 15px;
+  color: #262626;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  font-family: "Segoe UI";
+}
+.chart-gradient {
+  height: 3px;
+  background-image: linear-gradient(to right, #27ae60 80%, #fdc203 20%);
+  margin-bottom: 1rem;
+}
+.chart-details p {
+  font-size: 0.91rem;
+  margin-bottom: 0.7rem;
+}
+.chart-details span {
+  font-weight: 500;
+}
+.total {
+  color: blue;
+}
