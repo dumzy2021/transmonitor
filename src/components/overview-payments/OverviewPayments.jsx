@@ -144,7 +144,7 @@ const OverviewPayments = () => {
                     <td>
                       <p className={`status ${payment.status}`}>
                         <span className="dot"></span>
-                        {payment.status}
+                        <span className="status-title">{payment.status}</span>
                       </p>
                     </td>
                   </tr>

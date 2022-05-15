@@ -120,6 +120,7 @@
   display: inline-flex;
   align-items: baseline;
   margin-bottom: 0;
+  min-width: 9rem;
 }
 .dot {
   position: relative;
@@ -129,7 +130,9 @@
   border-radius: 50%;
   margin-right: 0.4rem;
 }
-
+.status-title {
+  font-size: 0.8rem;
+}
 .Reconcilled {
   color: #27ae60;
 }
