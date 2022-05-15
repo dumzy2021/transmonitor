@@ -20,10 +20,6 @@
   "overrides": {
     "autoprefixer": "10.4.5"
   },
-  "preinstall": "npx force-resolutions",
-  "resolutions": {
-    "autoprefixer": "10.4.5"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
