@@ -14,22 +14,22 @@ const sidebarNav = [
     section: "payments",
     routes: [
       {
-        link: "/blanks",
+        link: "/payments",
         icon: images.allPayments,
         text: "All Payments",
       },
       {
-        link: "/blanks",
+        link: "/reconcilled-payments",
         icon: images.reconcilledPayments,
         text: "Reconcilled Payments",
       },
       {
-        link: "/blanks",
+        link: "/unreconcilled-payments",
         icon: images.unReconcilledPayments,
         text: "Un-reconcilled Payments",
       },
       {
-        link: "/blanks",
+        link: "/manual-settlement",
         icon: images.settlement,
         text: "Manual Settlement",
       },
@@ -39,22 +39,22 @@ const sidebarNav = [
     section: "orders",
     routes: [
       {
-        link: "/blanks",
+        link: "/orders",
         icon: images.orders,
         text: "All Orders",
       },
       {
-        link: "/blanks",
+        link: "/pending-orders",
         icon: images.pendingOrders,
         text: "Pending Orders",
       },
       {
-        link: "/blanks",
+        link: "/reconcilled-orders",
         icon: images.reconcilledOrders,
         text: "Reconcilled Orders",
       },
       {
-        link: "/blanks",
+        link: "/merchant-profile",
         icon: images.merchant,
         text: "Merchant Profile",
       },
